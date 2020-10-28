@@ -1,1 +1,58 @@
-<p>grafica1 works!</p>
+
+<div class="row">
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+
+                <app-grafica-dona [title]="'Sucursal'"
+                                  [labels]="labels"
+                                  [valores]="valores"
+                                  [colores]="colores"
+                ></app-grafica-dona>
+            
+            </div>
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+
+                <app-grafica-dona [title]="'Medios'"
+                                  [labels]="labelsMed"
+                                  [valores]="valoresMed"
+                                  [colores]="coloresMed"
+                ></app-grafica-dona>
+            
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+
+                <app-grafica-dona [title]="'Servicios'"
+                                  [labels]="labelsMx"
+                                  [valores]="valoresMx"
+                                  [colores]="coloresMx"
+                ></app-grafica-dona>
+            
+            </div>
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+
+                <app-grafica-dona [title]="'Skills'"
+                                  [labels]="labelsSkill"
+                                  [valores]="valoresSkill"
+                                  [colores]="coloresSkill"
+                ></app-grafica-dona>
+            
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,1 +1,72 @@
-<p>progress works!</p>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Striped Progress bar I - <small>{{ progreso1 }}</small></h4>
+                <app-barra-progreso [progreso]="progreso1"
+                                    [bgClass]="'bg-'+colorTema1">
+                </app-barra-progreso>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Striped Progress bar II - <small>{{ progreso2 }}</small> </h4>
+                <app-barra-progreso [progreso]="progreso2"
+                                    [bgClass]="'bg-'+colorTema2">
+                </app-barra-progreso>             
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Striped Progress bar III - <small>{{ progreso3 }}</small> </h4>
+                <app-barra-progreso [progreso]="progreso3"
+                                    [bgClass]="'bg-'+colorTema3">
+                </app-barra-progreso>             
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="row">
+    <div class="col-4">
+        <div class="card">
+            <div class="card-body">
+                <app-incrementador [progreso]="progreso1"
+                                   [btnClass]="'btn-'+colorTema1"
+                                   (valorEmitido) ="progreso1 = $event">
+                </app-incrementador>
+            </div>
+        </div>
+    </div>
+    <div class="col-4">
+        <div class="card">
+            <div class="card-body">
+                <app-incrementador [progreso]="progreso2"
+                                   [btnClass]="'btn-'+colorTema2"
+                                   (valorEmitido) ="progreso2 = $event">
+                </app-incrementador>
+            </div>
+        </div>
+    </div>
+    <div class="col-4">
+        <div class="card">
+            <div class="card-body">
+                <app-incrementador [progreso]="progreso3"
+                                   [btnClass]="'btn-'+colorTema3"
+                                   (valorEmitido) ="progreso3 = $event">
+                </app-incrementador>
+            </div>
+        </div>
+    </div>
+</div>
